@@ -1,0 +1,143 @@
+<deployment-project plugin="plugin.ezdeploy" plugin-version="1.0">
+  <configuration file="C:\Users\User\Desktop\EEE 4416 Project\Batch_CGPA.prj" location="C:\Users\User\Desktop\EEE 4416 Project" name="Batch_CGPA" target="target.ezdeploy.standalone" target-name="Application Compiler">
+    <param.appname>Batch_CGPA</param.appname>
+    <param.icon />
+    <param.icons />
+    <param.version>1.0</param.version>
+    <param.authnamewatermark />
+    <param.email />
+    <param.company />
+    <param.summary />
+    <param.description />
+    <param.screenshot />
+    <param.guid />
+    <param.installpath.string>\Batch_CGPA\</param.installpath.string>
+    <param.installpath.combo>option.installpath.programfiles</param.installpath.combo>
+    <param.logo />
+    <param.install.notes />
+    <param.target.install.notes />
+    <param.intermediate>${PROJECT_ROOT}\Batch_CGPA\for_testing</param.intermediate>
+    <param.files.only>${PROJECT_ROOT}\Batch_CGPA\for_redistribution_files_only</param.files.only>
+    <param.output>${PROJECT_ROOT}\Batch_CGPA\for_redistribution</param.output>
+    <param.logdir>${PROJECT_ROOT}\Batch_CGPA</param.logdir>
+    <param.enable.clean.build>false</param.enable.clean.build>
+    <param.user.defined.mcr.options />
+    <param.embed.ctf>true</param.embed.ctf>
+    <param.target.type>subtarget.standalone</param.target.type>
+    <param.support.packages />
+    <param.web.mcr>true</param.web.mcr>
+    <param.package.mcr>false</param.package.mcr>
+    <param.no.mcr>false</param.no.mcr>
+    <param.web.mcr.name>MyAppInstaller_web</param.web.mcr.name>
+    <param.package.mcr.name>MyAppInstaller_mcr</param.package.mcr.name>
+    <param.no.mcr.name>MyAppInstaller_app</param.no.mcr.name>
+    <param.windows.command.prompt>true</param.windows.command.prompt>
+    <param.create.log>false</param.create.log>
+    <param.log.file />
+    <unset>
+      <param.icon />
+      <param.icons />
+      <param.version />
+      <param.authnamewatermark />
+      <param.email />
+      <param.company />
+      <param.summary />
+      <param.description />
+      <param.screenshot />
+      <param.guid />
+      <param.installpath.string />
+      <param.installpath.combo />
+      <param.logo />
+      <param.target.install.notes />
+      <param.intermediate />
+      <param.files.only />
+      <param.output />
+      <param.logdir />
+      <param.enable.clean.build />
+      <param.user.defined.mcr.options />
+      <param.embed.ctf />
+      <param.target.type />
+      <param.support.packages />
+      <param.web.mcr />
+      <param.package.mcr />
+      <param.no.mcr />
+      <param.web.mcr.name />
+      <param.package.mcr.name />
+      <param.no.mcr.name />
+      <param.windows.command.prompt />
+      <param.create.log />
+      <param.log.file />
+    </unset>
+    <fileset.main>
+      <file>${PROJECT_ROOT}\batchmode.m</file>
+    </fileset.main>
+    <fileset.resources>
+      <file>${PROJECT_ROOT}\EEE 4401.xlsx</file>
+      <file>${PROJECT_ROOT}\EEE 4402.xlsx</file>
+      <file>${PROJECT_ROOT}\EEE 4403.xlsx</file>
+      <file>${PROJECT_ROOT}\EEE 4404.xlsx</file>
+      <file>${PROJECT_ROOT}\EEE 4405.xlsx</file>
+      <file>${PROJECT_ROOT}\EEE 4406.xlsx</file>
+      <file>${PROJECT_ROOT}\EEE 4416.xlsx</file>
+      <file>${PROJECT_ROOT}\EEE 4418.xlsx</file>
+      <file>${PROJECT_ROOT}\HUM 4421.xlsx</file>
+      <file>${PROJECT_ROOT}\Math 4421.xlsx</file>
+      <file>${PROJECT_ROOT}\Math 4422.xlsx</file>
+      <file>${PROJECT_ROOT}\Phy 4421.xlsx</file>
+    </fileset.resources>
+    <fileset.package />
+    <fileset.depfun>
+      <file>${PROJECT_ROOT}\batchmode.fig</file>
+    </fileset.depfun>
+    <build-deliverables>
+      <file location="${PROJECT_ROOT}\Batch_CGPA\for_testing" name="splash.png" optional="false">C:\Users\User\Desktop\EEE 4416 Project\Batch_CGPA\for_testing\splash.png</file>
+      <file location="${PROJECT_ROOT}\Batch_CGPA\for_testing" name="readme.txt" optional="true">C:\Users\User\Desktop\EEE 4416 Project\Batch_CGPA\for_testing\readme.txt</file>
+      <file location="${PROJECT_ROOT}\Batch_CGPA\for_testing" name="Batch_CGPA.exe" optional="false">C:\Users\User\Desktop\EEE 4416 Project\Batch_CGPA\for_testing\Batch_CGPA.exe</file>
+    </build-deliverables>
+    <workflow />
+    <matlab>
+      <root>C:\Program Files\MATLAB\R2016a</root>
+      <toolboxes>
+        <toolbox name="fixedpoint" />
+        <toolbox name="matlabcoder" />
+        <toolbox name="matlabhdlcoder" />
+        <toolbox name="embeddedcoder" />
+      </toolboxes>
+      <toolbox>
+        <fixedpoint>
+          <enabled>true</enabled>
+        </fixedpoint>
+      </toolbox>
+      <toolbox>
+        <matlabcoder>
+          <enabled>true</enabled>
+        </matlabcoder>
+      </toolbox>
+      <toolbox>
+        <matlabhdlcoder>
+          <enabled>true</enabled>
+        </matlabhdlcoder>
+      </toolbox>
+      <toolbox>
+        <embeddedcoder>
+          <enabled>true</enabled>
+        </embeddedcoder>
+      </toolbox>
+    </matlab>
+    <platform>
+      <unix>false</unix>
+      <mac>false</mac>
+      <windows>true</windows>
+      <win2k>false</win2k>
+      <winxp>false</winxp>
+      <vista>false</vista>
+      <linux>false</linux>
+      <solaris>false</solaris>
+      <osver>6.2</osver>
+      <os32>false</os32>
+      <os64>true</os64>
+      <arch>win64</arch>
+      <matlab>true</matlab>
+    </platform>
+  </configuration>
+</deployment-project>
